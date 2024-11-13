@@ -6,36 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>My World Clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
   </head>
   <body>
-    <div class=" container">
-    <h1>World Clock</h1>
-    <select>
-      <option value="">Select a city..</option>
-      <option value="">London</option>
-      <option value="">New York</option>
-      <option value="">Auckland</option>
-    </select>
-    <div class="city">
-      <div>
-<h2> Los Angeles </h2>
-<div class="date">12 November 2024</div>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select>
+        <option value="">Select a city..</option>
+        <option value="">London</option>
+        <option value="">New York</option>
+        <option value="">Auckland</option>
+      </select>
+      <div class="city" id="los-angeles">
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date" id="los-angeles-date"></div>
+        </div>
+        <div class="time" id="los-angeles-time"></div>
       </div>
-      <div class="time"> 10:12:52 <small>AM</small></div>
-    </div>
-    <div class="city">
-      <div>
-<h2> Paris </h2>
-<div class="date">12 November 2024</div>
+      <div class="city" id="paris">
+        <div>
+          <h2>Paris</h2>
+          <div class="date" id="paris-date"></div>
+        </div>
+        <div class="time" id="paris-time"></div>
       </div>
-      <div class="time"> 10:12:52 <small>AM</small></div>
-    </div>
     </div>
     <footer>
       This project was coded with ❤️ by <strong>Yolanda Masuku</strong> and is
       <a href="https://github.com/YolaMsk?tab=repositories" target="_blank">
-        open sourced on GitHub</a
-      >
+        open sourced on GitHub
+      </a>
     </footer>
     <script src="javascript/index.js"></script>
   </body>
