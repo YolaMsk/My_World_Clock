@@ -11,11 +11,11 @@ function updateCityTime() {
     parisDateElement.innerHTML = parisTime.format("DD MMMM YYYY");
     parisTimeElement.innerHTML = parisTime.format("h:mm:ss A");
 
-    let tokyoDateElement = document.querySelector("#tokyo-date");    
-     let tokyoTimeElement = document.querySelector("#tokyo-time"); 
-    let tokyoTime = moment().tz("Asia/Tokyo");
-    tokyoDateElement.innerHTML = tokyoTime.format("DD MMMM YYYY");
-    tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss A");
+    let sydneyDateElement = document.querySelector("#sydney-date");
+    let sydneyTimeElement = document.querySelector("#sydney-time");
+    let sydneyTime = moment().tz("Australia/Sydney");
+    sydneyDateElement.innerHTML = sydneyTime.format("DD MMMM YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss A");
 }
 
 setInterval(updateCityTime, 1000);
