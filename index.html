@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
-    <title>My World Clock</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>My World Clock</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
+</head>
 <body>
-    <div class="container">
-        <h1>
-        <a href="/">World Clock </a>
-        </h1>
-        <select id="city">
-            <option value="">Select a city..</option>
-            <option value="current/Johannesburg">My current location</option>
-            <option value="Europe/London">London</option>
-            <option value="America/New_York">New York</option>
-            <option value="Pacific/Auckland">Auckland</option>
-        </select>
-        <div id="cities">
-            <div class="city" id="los-angeles">
-                <div>
-                    <h2>Los Angeles</h2>
-                    <div class="date" id="los-angeles-date"></div>
-                </div>
-                <div class="time" id="los-angeles-time"></div>
-            </div>
-            <div class="city" id="paris">
-                <div>
-                    <h2>Paris</h2>
-                    <div class="date" id="paris-date"></div>
-                </div>
-                <div class="time" id="paris-time"></div>
-            </div>
+  <div class="container">
+    <h1>World Clock</h1>
+    <select id="city">
+      <option value="">Select a city..</option>
+      <option value="current">My current location</option>
+      <option value="Europe/London">London</option>
+      <option value="America/New_York">New York</option>
+      <option value="Pacific/Auckland">Auckland</option>
+      <option value="Asia/Tokyo">Tokyo</option> 
+    </select>
+    <div id="cities">
+      <div class="city" id="los-angeles">
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date" id="los-angeles-date"></div>
         </div>
+        <div class="time" id="los-angeles-time"></div>
+      </div>
+      <div class="city" id="paris">
+        <div>
+          <h2>Paris</h2>
+          <div class="date" id="paris-date"></div>
+        </div>
+        <div class="time" id="paris-time"></div>
+      </div>
+      <div class="city" id="tokyo"> 
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date" id="tokyo-date"></div>
+        </div>
+        <div class="time" id="tokyo-time"></div>
+      </div>
     </div>
-    <footer>
-        This project was coded with ❤️ by <strong>Yolanda Masuku</strong> and is
-        <a href="https://github.com/YolaMsk?tab=repositories" target="_blank">open sourced on GitHub</a>
-    </footer>
-    <script src="javascript/index.js"></script>
+  </div>
+  <footer>
+    This project was coded with ❤️ by <strong>Yolanda Masuku</strong> and is
+    <a href="https://github.com/YolaMsk?tab=repositories" target="_blank">open sourced on GitHub</a>
+  </footer>
+  <script src="javascript/index.js"></script>
 </body>
 </html>
+
 
