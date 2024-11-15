@@ -54,7 +54,12 @@ select{
 }
 
 
-
+button{
+    display: block;
+    padding:8px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .date{
     opacity: 0.7;
 }
