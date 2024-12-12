@@ -33,10 +33,31 @@ function updateCityTime() {
 
     koreaDateElement.innerHTML = koreaTime.format("MMMM Do YYYY");
     koreaTimeElement.innerHTML = koreaTime.format("h:mm:ss A");
+
 }
 
 setInterval(updateCityTime, 1000);
 
+function updateCity(event) {
+    let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
+
+    let cityTime = moment().tz(cityTimeZone);
+    let cityName = cityTimeZone.split("/")[1].replace("_", " ");
+
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = `
+        <div class="city">
+            <div>
+                <h2>${cityName}</h2>
+                <div class="date">${cityTime.format("DD MMMM YYYY")}</div>
+            </div>
+            <div class="time">${cityTime.format("h:mm:ss A")}</div>
+        </div>
+    `;
+}
 function toggleMoreCities() {
     let moreCities = document.querySelector("#more-cities");
     let button = document.querySelector("#toggle-button");
